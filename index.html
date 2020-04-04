@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <style>
+     body {
+    background-color: red;
+   
+}
+  .skyColor1 {
+  background-color: skyblue;
+  }
+  .redColor {
+  background-color: rgb(245, 152, 152);
+  }
+  .greenColor {
+  background-color: rgb(34, 255, 27);
+  }
+  .yellowColor {
+  background-color: rgb(199, 253, 2);
+  }
+
+   </style>
+   >
+</head>
+<body>
+    <header id="header1" class=" bg-primary p-5 text-center"><h1 id="title">JavaScript Background Color Changer</h1></header>
+    <div class="container">
+    <div class="card mt-5 mb-3 p-3">
+      <div class="row">
+        <div class="col-md-2 text-center">
+          <button type="button" id="skyColor"  class="btn btn-primary text-center">Sky Blue</button>
+        </div>
+        
+        <div class="col-md-2 text-center  ">
+          <button type="button"  id="redColor" class="btn btn-danger text-center">Rose Red</button>
+      </div>
+        <div class="col-md-2 text-center  ">
+          <button type="button"  id="greenColor" class="btn text-center text-white" style="background-color: green;" >Green Leaf</button>
+      </div>
+        <div class="col-md-2 text-center  ">
+          <button type="button"  id="yellowColor" class="btn text-center text-white" style="background-color: rgb(214, 255, 66);" >Yellow Mango</button>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+    
+    <script>
+   
+      let skyColor = document.getElementById('skyColor'); 
+     let bodySky = document.querySelector('body');
+      skyColor.addEventListener('click',()=> {
+          bodySky.classList.toggle('skyColor1');
+         });
+      let redColor = document.getElementById('redColor'); 
+     let body = document.querySelector('body');
+      redColor.addEventListener('click',()=> {
+           body.classList.toggle('redColor');
+         });
+     
+      let greenColor = document.getElementById('greenColor'); 
+     let bodyGreen = document.querySelector('body');
+      greenColor.addEventListener('click',()=> {
+           bodyGreen.classList.toggle('greenColor');
+         });
+      let yellowColor = document.getElementById('yellowColor'); 
+     let bodyYellow = document.querySelector('body');
+      yellowColor.addEventListener('click',()=> {
+           bodyGreen.classList.toggle('yellowColor');
+         });
+     
+        </script>
+</body>
+
+
+</html>
